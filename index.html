@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Paul Murphy Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css">
+
+	
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+	
+
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#gn-menu">
+  	<!-- ========== MAIN MENU ========== -->
+	<div class="container">
+		<ul id="gn-menu" class="gn-menu-main">
+			<li class="gn-trigger">
+				<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+				<nav class="gn-menu-wrapper">
+					<div class="gn-scroller">
+						<ul class="gn-menu">
+							<li class="gn-search-item">
+								<input placeholder="Search" type="search" class="gn-search">
+								<a class="gn-icon gn-icon-search"><span>Search</span></a>
+							</li>
+							<li><a href="#home" class="gn-icon gn-icon-home smoothScroll">Home</a></li>
+							<li><a href="#about" class="gn-icon gn-icon-archive smoothScroll">About</a></li>
+							<li><a href="#portfolio" class="gn-icon gn-icon-pictures smoothScroll">Portfolio</a></li>
+							<li><a href="#blog" class="gn-icon gn-icon-article smoothScroll">Blog</a></li>
+							<li><a href="#contact" class="gn-icon gn-icon-envelop smoothScroll">Contact</a></li>
+						</ul>
+					</div><!-- /gn-scroller -->
+				</nav>
+			</li>
+			<li><a href="#home" class="smoothScroll">Top of page</a></li>
+		</ul>
+	</div><!-- /container -->
+		
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="col-lg-8">
+			<br></br>
+			<br></br>
+			<h1>Paul Murphy</h1>
+			<h1>Portfolio</h1>
+			</div>
+			<div class="col-lg-4">
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<!-- ABOUT SECTION -->
+	<section id="about" name="about"></section>
+	<div class="container about">
+		<div class="col-lg-6 col-lg-offset-3">
+			<h3>About Paul Murphy</h3>
+			<h5>DESIGNER/PROGRAMMER</h5>
+			<hr>
+			<br>
+			<h4>Huge technology geek and a bit of a creative type. I design products and software but also enjoy programming and problem solving exercises.<br/>-</h4>
+			<p>Currently studying in the University of Limerick B.Sc. in Digital Media Design. I also hold a Level 6 qualification with distinctions from Griffith College Limerick in the field of Computer Science. I enjoy programming and have a lot of experience with the fundamentals of java programming. I enjoy HTML and the challenge of designing friendly user interfaces.</p>
+		</div><!-- /col-lg-6 -->
+	</div><!-- /container -->
+	
+
+	
+	
+	<!-- BEGIN CHART SECTION -->	
+	<div id="chartwrap">
+	<br>
+	<br>
+		<div class="container centered">
+			<div class="col-lg-3"></div>
+			
+				<!-- FIRST CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas" height="130" width="130"></canvas>
+					<label>HTML</label>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 75,
+									color:"#1abc9c"
+								},
+								{
+									value : 25,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+				
+				
+				<!-- SECOND CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas1" height="130" width="130"></canvas>
+					<label>Java</label>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 80,
+									color:"#1abc9c"
+								},
+								{
+									value : 20,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+				
+				
+				<!-- THIRD CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas2" height="130" width="130"></canvas>
+					<label>CSS</label>
+					<script>
+						var doughnutData = [
+								{
+									value: 60,
+									color:"#1abc9c"
+								},
+								{
+									value : 40,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+
+				</div><!-- col-lg-2 -->
+			<div class="col-lg-3"></div>
+
+
+
+		</div><!-- container -->
+	</div><!-- chartwrap -->
+
+
+	<!-- BEGIN CHART SECTION -->	
+	<div id="chartwrap">
+	<br>
+	<br>
+		<div class="container centered">
+			<div class="col-lg-3"></div>
+			
+				<!-- FIRST CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas3" height="130" width="130"></canvas>
+					<label>SQL</label>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 60,
+									color:"#1abc9c"
+								},
+								{
+									value : 40,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+				
+				
+				<!-- SECOND CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas4" height="130" width="130"></canvas>
+					<label>Wordpress</label>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 90,
+									color:"#1abc9c"
+								},
+								{
+									value : 10,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+				
+				
+				<!-- THIRD CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas5" height="130" width="130"></canvas>
+					<label>Photoshop</label>
+					<script>
+						var doughnutData = [
+								{
+									value: 65,
+									color:"#1abc9c"
+								},
+								{
+									value : 35,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas5").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+
+				</div><!-- col-lg-2 -->
+			<div class="col-lg-3"></div>
+
+
+			
+		</div><!-- container -->
+	</div><!-- chartwrap -->
+
+
+	
+	
+	<section id="portfolio" name="portfolio"></section>
+	<div id="foliowrap">
+		<div class="container">
+			<h3>Some of my recent projects</h3>
+			<br>
+			<br>
+			<div class="row">	
+			
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt="">
+							<figcaption>
+								<h5>SPEAKER DESIGN</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				
+						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+						      
+						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">SPEAKER DESIGN</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
+						          <p>This Project was to design portable speakers for the beach. Generating many concepts is a good approach to take when designing products.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+
+
+				
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt="">
+							<figcaption>
+								<h5>CARDBOARD CHAIR</h5>
+								<a data-toggle="modal" href="#myModal1" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+
+				 <!-- MODAL 2 -->
+				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">CARDBOARD CHAIR</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt=""></p>
+						          <p>The design brief asked for a cardboard chair that could support the weight of an average adult. This is one the concepts that I designed.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+
+
+
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt="">
+							<figcaption>
+								<h5>TRON LIGHT</h5>
+								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+			</div><!-- /row -->
+
+
+			<!-- MODAL 3 -->
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">TRON LIGHT</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt=""></p>
+						          <p>This is a Tron inspired lighting unit that I designed for one of my Product Design projects.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+
+
+
+				<!-- PORTFOLIO IMAGE 4 -->
+			<div class="row">	
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
+							<figcaption>
+								<h5>MINECRAFT PLUGIN</h5>
+								<a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+				<!-- MODAL 4 -->
+				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">MINECRAFT PLUGIN</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt=""></p>
+						          <p>I though that writing some basic minecraft plugins would be a good way to see the practical applications of java. This is the Event handle class that I created which greets new players with a hello message and also calls on a PlayerListener class.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+
+
+				
+				<!-- PORTFOLIO IMAGE 5 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
+							<figcaption>
+								<h5>MINECRAFT PLUGIN</h5>
+								<a data-toggle="modal" href="#myModal4" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+				<!-- MODAL 5 -->
+				<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">MINECRAFT PLUGIN</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt=""></p>
+						          <p>This is the PlayerListener class for the plugin. The program simply returns a message to the player when he/she throws an egg in game. I plan on doing some more advanced plugins soon.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+
+
+				
+				<!-- PORTFOLIO IMAGE 6 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
+							<figcaption>
+								<h5>MASTERMIND JAVA</h5>
+								<a data-toggle="modal" href="#myModal5" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+
+				<!-- MODAL 6 -->
+				<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">MASTERMIND JAVA</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt=""></p>
+						          <p>This is some code that I developed as part of a project to create a small game called mastermind. The aim of this game is to crack the code in a certain amount of guesses.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+
+
+
+
+
+
+
+				<br>
+			</div><!-- /row -->
+
+			<div class="row">	
+			
+				<!-- PORTFOLIO IMAGE 7 -->
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio07.jpg" alt="">
+							<figcaption>
+								<h5>BASIC HTML</h5>
+								<a data-toggle="modal" href="#myModal6" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				
+						 <!-- MODAL 7 -->
+						      
+						  <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">BASIC HTML</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio07.jpg" alt=""></p>
+						          <p>This is a webpage that I built in notepad using basic HTML. The website has multiple pages with embedded flash games and a final page for charity.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+
+
+				
+				<!-- PORTFOLIO IMAGE 8 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio08.jpg" alt="">
+							<figcaption>
+								<h5>BASIC HTML</h5>
+								<a data-toggle="modal" href="#myModal7" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+
+				 <!-- MODAL 8 -->
+				<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">BASIC HTML</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio08.jpg" alt=""></p>
+						          <p>This is a snapshot of the charity page. I also built the CSS to govern the layout of the pages. I set myself the challenge of having the top menu follow the user as they scroll down the page.</p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+
+
+
+				<!-- PORTFOLIO IMAGE 9 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio09.jpg" alt="">
+							<figcaption>
+								<h5>CSS</h5>
+								<a data-toggle="modal" href="#myModal8" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+				<!-- MODAL 9 -->
+						      
+						  <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">CSS</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio09.jpg" alt=""></p>
+						          <p>This is some of the CSS code that I wrote for this page.
+						          </p>
+						          
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+
+
+			</div><!-- /row -->
+
+		</div><!-- /container -->
+	</div><!-- /foliowrap -->
+	
+	
+	<section id="blog" name="blog"></section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6 about">
+				<h3>Sometimes I Blog</h3>
+				<h5>ASPIRING DESIGNER/CODER BLOG</h5>
+				<br>
+				<br>
+				
+				<!-- ACCORDION -->
+		            <div class="accordion" id="accordion2">
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		                        <date>Sep 26, 2014</date> <plus> + </plus> My Perspective On Interactive Design
+		                        </a>
+		                    </div><!-- /accordion-heading -->
+		                    <div id="collapseOne" class="accordion-body collapse in">
+		                    	<br>
+		                        <div class="accordion-inner">
+		                        <h4>This entry is about some of my thoughts when it comes to interactive design.</h4>
+		                        <p>I recently chose a group topic to study and write about for my module Directed Study 1 CS4042. The topic that my group and I chose was “Designing Interactive Installations For Home, Health and Play”. When choosing our topic I had suggested to my fellow group members, Eddie and Matus, that we select this topic as it appealed to me the most and I thought it would be an interesting assignment to undertake together. As it turns out I was right. The vast amount of information available on the internet was quite overwhelming at first. We had originally 4 members in our group but this soon dropped to three because of lack of attendance.</p>
+								<p>The first step in this project was to divide the workload evenly. I chose to take the health topic and my colleges chose home and play. From here I found a project that Volkswagen had undertaken titled “the fun theory”. I fount their approached to Interactive media interesting and thought their use of technology to improve human behavior was an exciting field to study.</p>
+								<p>I then educated myself further on Interactive Installations and how they could help make the world a healthier place. Through my findings I realized that if more interactive installations were set in place throughout the first world we could live in a happier, less stressful and healthier world. By simply lining subway stairs with a white and black sheet and making the steps play notes as you walked over them we could encourage 66% more people to actually use the stairs rather than an escalator.</p>
+								<p>All in all, I believe that the world could greatly benefit from integrating technology with everyday tasks. The possibilities for interactive design are endless and it is certainly a field in which I will be researching further as I advance through my college life.</p>
+								<p><img class="img-circle" src="assets/img/IXdesign.jpg" height="50px" width="75px"> - <i>IX Design</i></p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+		
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		                        <date>Sep 10, 2014</date> <plus> + </plus>  Group Reflection
+		                        </a>
+		                    </div>
+		                    <div id="collapseTwo" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<h4>This entry will cover my personal reflections on a group project that I undertook. The project detail was to organise a group trip and research our given plaque in the city.</h4>
+		                        <p>I had some difficulties in organising the group for the trip to town. I emailed my workmates first through the UL student mail. From there I added them on Facebook. I thought that a multiple conversation on Facebook would be the most efficient way of communicating with everyone. I set up a conversation and invited my colleagues to it. Unfortunately nobody responded immediately. As the deadline closed further, I organised to travel into town and my group agreed to meet me in the csis building. I drove my colleagues into town and we took some pictures of the plaque and building , after which I dropped them back into UL. From there we once again used Facebook to communicate. I started and article on Wikipedia and filled it with some pictures and writing on the plaque. I then sent them the link to the wiki to edit and add to.</p>
+								<p>We met as a group just once to venture into town. Although I found my group slow to organise I think that they are a good group. I believe that I took some initiative in organising the group . I was not upset by this and found that I was to my liking to organise the commute and work load.</p>
+								<p>Overall I enjoyed doing this project as I made new friends and learned more about the culture of the city I was born in. I also learned about myself and how I work within a group.</p>
+								<p><img class="img-circle" src="assets/img/plaque.jpg" height="50px" width="75px"> - <i>Plaque</i></p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+		
+		                 <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+		                        <date>Aug 22, 2014</date> <plus> + </plus>  Group Assignment
+		                        </a>
+		                    </div>
+		                    <div id="collapseThree" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+		                        	<h4>Commercial Buildings Plaque</h4>
+								<p>I recently was assigned a group project. The objective of the project was to organise as a group and travel into town to visit our specific topics and record media. The Plaque that we were assigned was the Commercial Buildings Plaque which is located across from Arthur’s Quay Shopping centre in the heart of town.</p>
+								<p>Personally I enjoyed this project as gave a change of pace from the usual assignments. I also made new friends with the people in my group and learned a bit more about Limerick City and its rich culture. The building was occupied by the Limerick City Council up until 1990.
+								<a href="http://en.wikipedia.org/wiki/Limerick_City_Council">Visit the Wikipedia page!</a></p>
+								<p>After that, The building was occupied by the Mid-West Business Institute and still is today. This is a indipendent third level business and technology college.</p>
+								<p><img class="img-circle" src="assets/img/building.jpg" height="50px" width="75px"> - <i>Mid West Business Institute</i></p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+		                
+		                 <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+		                        <date>Aug 13, 2014</date> <plus> + </plus>  Reflection on Group Work
+		                        </a>
+		                    </div>
+		                    <div id="collapseFour" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<p>The group topic for Directed Study 1 in CS4042 that my group and I chose is “Designing Interactive Installations For Home, Health and Play”. My colleagues for this project were Matus and Eddie. The first task for the group work was to divide the work load and select our chosen sub topics. The topic I chose was Health. My workmates then chose home and play. I then suggested to my group that we use a program named “dropbox”. This program made it easy to transfer files and communicate more efficiently. Although this program was extremely helpful, it also had its faults. We had encountered some problems while two people worked on the same file. This would create separate files and one person would have to go back and alter one of the files.</p>
+								<p>Before we began to research our selected topics I decided to draw up a skeleton file and place it in dropbox. This gave some similar structure between our individual work and would make it easier to put our work together when we had finished.</p>
+								<p>From here we branched out and did some research on our individual topics. We met as a group regularly to discuss our topics and share information. For the presentation Eddie took the lead. He set a format for the slides and uploaded his slides to dropbox. From here, Matus and I added our slides edited the document until we were all happy with the final document.</p>
+								<p>I thought that our presentation went well. We decided not to focus on cramming information onto the slides but instead used a few bullet points and some pictures to illustrate our thoughts. I was also interested to see our different approaches to how we presented our information. My workmates wrote out everything they had planned to say and made flash cards with the information. My approach was a bit more laid back as I just made flash cards and didn’t have a specific script to stick to. I believe that I present better when I do not have my thoughts scripted and I think the presentation feels more organic.</p>
+								<p>All in all I really enjoyed this project and it is something that I will be researching further. I do not believe there was a specific leader in our group as we took turns with our tasks and functioned as a team very well.</p>
+								<p>Thanks for reading,</p>
+								<p>Paul</p>
+								<p><img class="img-circle" src="assets/img/teamwork.jpg" height="50px" width="75px"> - <i>Team Work</i></p>
+
+
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>			
+					</div><!-- Accordion -->
+				</div><!-- /col-lg-6 -->
+
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	<!--
+	<div id="testimonial">
+		<div class="container">
+			<div class="bs-example">
+				<div id="carousel-example-generic" class="carousel slide bs-docs-carousel-example">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<h1>Work with Alex was a pleasure. He understood exactly what I wanted and created an awesome site for my company.</h1>
+						<br>
+						<h2>Brad Cooper</h2>
+					</div>
+					<div class="item">
+						<h1>I'm really happy with the results. Get 100% satisfaction is difficult but Alex got it without problems.</h1>
+						<br>
+						<h2>Joan Mathews</h2>
+					</div>
+					<div class="item">
+						<h1>Search no more. Alex is the guy that you need for your next project. Don't waste your time. He's the chosen one.</h1>
+						<br>
+						<h2>Trevor Bishop</h2>
+					</div>
+				</div>
+			<br>
+			<br>
+			<br>
+			</div>
+		</div>
+	</div>
+	-->
+	<section id="contact" name="contact"></section>
+	<div id="footerwrap">
+		<div class="container">
+			<div class="col-lg-5">
+				<h3>Address</h3>
+				<p>
+				Raheen,<br/>
+				Limerick,<br/>
+				Ireland
+				</p>
+			</div>
+			
+			<div class="col-lg-7">
+				<h3>Drop Me A Line</h3>
+				<br>
+				<form role="form" action="contact.php" method="post" enctype="plain"> 
+				  <div class="form-group">
+				    <label for="name1">Your Name</label>
+				    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="email1">Email address</label>
+				    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
+				  </div>
+				  <div class="form-group">
+				  	<label>Your Text</label>
+				  	<textarea class="form-control" name="Message" rows="3"></textarea>
+				  </div>
+				  <br>
+				  <input type="submit" class="btn-large btn-theme"></input>
+				</form>
+			</div>
+		
+		</div>
+	
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina.js"></script>
+	<script src="assets/js/classie.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+	<script src="assets/js/gnmenu.js"></script>
+	<script>
+		new gnMenu( document.getElementById( 'gn-menu' ) );
+	</script>  
+	<script>
+		$('.carousel').carousel({
+		  interval: 5500
+		  })
+	</script>
+	
+	
+  </body>
+</html>
